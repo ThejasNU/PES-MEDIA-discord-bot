@@ -30,7 +30,25 @@ client.on("message", (message) => {
 
 	if (command === "ping") {
 		client.commands.get("ping").execute(message, args);
+		message.channel.send(
+			`Latency is ${
+				Date.now() - message.createdTimestamp
+			}ms. API Latency is ${Math.round(client.ws.ping)}ms`
+		);
 		//message.channel.send("pong!")
+	} else if (command === "hello") {
+		client.commands.get("hello").execute(message, args);
+	} else if (command === "pride") {
+		client.commands.get("pride").execute(message, args);
+	} else if (command === "nick") {
+		client.commands.get("nick").execute(message, args);
+	} else if (
+		command === "clear" ||
+		command === "purge" ||
+		command === "p" ||
+		command === "c"
+	) {
+		client.commands.get("clear").execute(message, args);
 	}
 });
 
