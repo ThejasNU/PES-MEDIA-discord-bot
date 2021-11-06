@@ -46,6 +46,8 @@ client.on("message", (message) => {
 		client.commands.get("god").execute(message);
 	} else if (command === "topper") {
 		client.commands.get("topper").execute(message);
+	} else if (command === "greet"){
+		client.commands.get("greet").execute(message,args);
 	} else if (
 		command === "clear" ||
 		command === "purge" ||
