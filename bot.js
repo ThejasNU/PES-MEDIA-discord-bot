@@ -42,6 +42,10 @@ client.on("message", (message) => {
 		client.commands.get("pride").execute(message, args);
 	} else if (command === "nick") {
 		client.commands.get("nick").execute(message, args);
+	} else if (command === "god") {
+		client.commands.get("god").execute(message);
+	} else if (command === "topper") {
+		client.commands.get("topper").execute(message);
 	} else if (
 		command === "clear" ||
 		command === "purge" ||
