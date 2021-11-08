@@ -1,3 +1,4 @@
+
 module.exports = {
 	name: "greet",
 	description: "Greets the mentioned person with the entered greeting",
@@ -9,3 +10,4 @@ module.exports = {
 		await message.channel.send(`${greeting} ${args[0]}`);
 	},
 };
+
