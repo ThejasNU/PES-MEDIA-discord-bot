@@ -48,7 +48,11 @@ client.on("message", (message) => {
 		client.commands.get("topper").execute(message);
 	} else if (command === "greet"){
 		client.commands.get("greet").execute(message,args);
-	} else if (
+
+	}  else if (command === "serverinfo") {
+    		client.commands.get("serverinfo").execute(message);
+  	} else if (
+
 		command === "clear" ||
 		command === "purge" ||
 		command === "p" ||
