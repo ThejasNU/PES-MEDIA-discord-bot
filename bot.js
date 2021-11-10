@@ -57,6 +57,8 @@ client.on("message", (message) => {
 		command === "c"
 	) {
 		client.commands.get("clear").execute(message, args);
+	} else if (command === "noob") {
+		client.commands.get("noob").execute(message);
 	}
 });
 
