@@ -51,7 +51,11 @@ client.on("message", (message) => {
 
 	}  else if (command === "serverinfo") {
     		client.commands.get("serverinfo").execute(message);
-  	} else if (
+  	} else if (command === "snipe") {
+    		client.commands.get("snipe").execute(client,message);
+  	} else if (command === "spam") {
+    		client.commands.get("spam").execute(message,args);
+  	}  else if (
 
 		command === "clear" ||
 		command === "purge" ||
