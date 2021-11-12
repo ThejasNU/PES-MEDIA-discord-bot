@@ -48,21 +48,21 @@ client.on("message", (message) => {
 		client.commands.get("topper").execute(message);
 	} else if (command === "greet"){
 		client.commands.get("greet").execute(message,args);
-
 	}  else if (command === "serverinfo") {
     		client.commands.get("serverinfo").execute(message);
   	} else if (command === "snipe") {
     		client.commands.get("snipe").execute(client,message);
   	} else if (command === "spam") {
     		client.commands.get("spam").execute(message,args);
-  	}  else if (
-
+  	} else if (
 		command === "clear" ||
 		command === "purge" ||
 		command === "p" ||
 		command === "c"
 	) {
 		client.commands.get("clear").execute(message, args);
+	} else if (command === "noob") {
+		client.commands.get("noob").execute(message);
 	}
 });
 
